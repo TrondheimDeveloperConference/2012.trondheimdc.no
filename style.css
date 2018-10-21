@@ -1,0 +1,359 @@
+@import url("http://fnt.webink.com/wfs/webink.css?project=048E1F9E-653B-46E4-95B5-B105967752C5&fonts=C62E2C20-BEE2-86B6-FE22-96C38B6818CF:family=AbrilText-Bold,459E4BD0-C12A-EE14-2ABB-37D7192D1AAA:family=AbrilText-ExtraBold,20615D9B-B1A8-988E-EF5E-4BF7DB5C8886:family=AbrilText-ExtraBoldItalic,3E55D2F1-1F5E-63EE-5EC0-8AE57E0AB083:family=AbrilText-Regular");
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+    }
+
+html { 
+    overflow-x: hidden; 
+    background: #6cfffe url(images/bg_main.jpg) fixed top center no-repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-width: 320px;
+    }
+
+html, body {
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+    }
+    
+body {
+    position: absolute;
+    display: table;
+    }
+    
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+
+#NotCurrentConference { 
+    z-index: 2;
+    position: fixed;  
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 4px;
+    background: #ccff49;
+    color: rgb(102, 102, 102);
+    font-family: 'AbrilText-Bold', Georgia, serif;
+    }
+    
+#OuterWrapper {
+    margin: 0 auto;
+    padding: 0 2%;
+    font: normal normal normal 17px/24px 'AbrilText', Georgia, Serif;
+    background: url(images/dots.png) top center repeat;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    }
+    .ie7 #OuterWrapper { border: 0; }
+
+section, footer {
+    margin: 0 auto;
+	padding: 0 3%;
+	width: 94%;
+	max-width: 675px;
+    }
+    
+    section { 
+        margin-bottom: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        }
+        
+        section > h2, .contentLeft {
+            float: left;
+            width: 25%;
+            }
+            
+        section .content { margin-left: 30%; }
+        
+        .hidden { display: none; }
+
+/* GEN TYPO */
+h1, h2, h3 { 
+    font-weight: bold; 
+    text-rendering: optimizeLegibility;
+    }
+
+h1, h2, .ingress { font-family: 'AbrilText-Bold', Georgia, serif; }
+
+h1 {
+    font-size: 4.7em;
+    line-height: 1.2em;
+    margin: 10px 0 20px 0;
+    }
+    
+h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    }
+    
+h3 {
+    margin-bottom: 5px;
+    font-size: 1em;
+    }
+    
+p { 
+    margin: 5px 0 15px; 
+    text-rendering: optimizeLegibility;
+    }
+    
+    .ingress {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        }
+    
+a { 
+    color: #000; 
+    text-decoration: underline;
+    cursor: pointer;
+    }
+
+a:hover {
+    text-decoration: none;
+    }
+    
+ul { margin: 0 0 15px 15px; }
+    
+    li { margin-bottom: 3px; }
+
+#Pamelding { 
+    text-decoration: none; 
+    font-weight: bold;
+    line-height: 0.8em;
+    border-bottom: 4px solid #000;
+    background-color: #06f4ed;
+    }
+    
+    #Pamelding:hover { border-bottom: 2px solid #000; }
+        
+small {
+    font-size: 0.65em;
+    display: block;
+    }
+    
+a img { border: 0; }
+    
+/* CLASSES */
+.cleanList li {
+    list-style-type: none;
+    }
+    
+.mailBtn { 
+    display: inline-block;
+    text-align: right;
+    background-color: #06f4ed;
+    border-bottom: 3px solid #000;
+    text-decoration: none;
+    font-family: 'AbrilText-Bold', serif;
+    }    
+
+/* LAYOUT*/
+header {
+	width: 100%;
+	clear: both;
+	max-width: 1000px;
+	margin: 0 auto 20px;
+    }
+    
+    header h1 {
+        width: 100%;    
+        min-width: 200px;
+        overflow: hidden;
+        text-indent: -9999em;
+        margin: -40px 0 -27px 5px; 
+		clear: both;
+        }
+
+        header img { 
+            display: block; 
+            width: 100%;
+            margin-left: -25px;
+            }
+    
+	#ShowMenu { display: none; }
+
+#MainMenu {
+	width: auto;
+	margin: 10px auto 0;
+	max-width: 887px;
+    }
+	
+	#MainMenu ul { 
+	    width: auto;
+	    margin: 0 auto;
+	    display: table;
+	    float: right;
+	    clear: right;
+	    }
+	
+		#MainMenu li {
+			list-style: none;
+			text-align: left;
+			padding: 3px 10px 3px 0;
+			margin-right: 10px;
+			float: left;
+	    	}
+	    	
+			#MainMenu li a {
+				display: block;
+				height: 100%;
+				vertical-align: middle;
+				text-decoration: none;
+				font-weight: bolder;
+				font-size: 0.7em;
+				text-transform: uppercase;
+			    }
+			    
+			#MainMenu li.external a {
+			    font-weight: normal;
+			    text-transform: none;
+			    }
+			    
+				#MainMenu li a:hover { text-decoration: underline;  }
+                
+/* Foredrag */
+.about { font-style: italic; }
+
+/* SKJEMA */
+form label {
+    display: block;
+    width: 80%;
+    text-align: right;
+    margin-top: 10px;
+    overflow: hidden;
+    }
+
+    form label input,
+    form label textarea {
+        width: 50%;
+        float: right;
+        margin-left: 15px;
+        height: 25px;
+        font-family: Arial, sans-serif;
+        }
+    
+    form label textarea { height: auto; }
+
+form button {
+    float: right;
+    border: 1px solid #000;
+    background: #fff;
+    padding: 10px 20px;
+    margin-right: 20%;
+    margin-top: 20px;
+    cursor: pointer;
+    }
+    form button:active { background-color: #ccc; }
+
+footer { 
+    text-align: center;
+    padding-top: 100px;
+    }
+
+    footer ul { 
+        margin: 20px auto 50px; 
+        width: auto;
+        display: table;
+        }
+
+    footer li {
+        float: left;
+        margin-right: 38px;
+        height: 80px;
+        }
+    footer li.last { margin-right: 0; } 
+
+        footer li a {
+            display: block;
+            width: 70px;
+            margin: 0 auto;
+            }
+
+        footer li.last a { width: 85px; }
+        
+             footer ul li a img { width: 100%; }
+
+ @media only screen and (max-width: 1000px) {  
+  header h1 {
+	margin-left: -30px;
+	}
+ }
+			 
+@media only screen and (max-width: 550px) {  
+
+    html { background-image: none; }
+    
+    #OuterWrapper { border-width: 10px; }
+        
+        #MainMenu ul {
+	        float: none;
+	        margin-left: 0;
+            }
+            
+            #MainMenu ul:first-child { display: none; }
+            
+            #MainMenu ul li { margin-right: 5px; }
+			
+				#MainMenu ul li  a{ font-size: 0.55em; }
+            
+    
+        header { 
+            max-width: 1000px; 
+            width: 100%;
+            }
+        
+            header h1 { 
+                margin-left: -15px; 
+                margin-top: 0;
+                margin-bottom: -10px;
+                }
+
+                header img { margin-left: 0; }
+
+        #Innsalg { padding-top: 10px;}
+
+        section > h2 {
+            float: none;
+            width: 100%;
+            }
+        
+		section{ margin-bottom: 0; }
+		
+        section .content {
+            float: none;
+            width: 100%;
+            margin-left: 0;
+            }
+
+        h1 { font-size: 1.8em; }
+        
+        footer ul li { 
+            height: 200px; 
+            width: 35%;
+            }
+            
+            footer ul li a { width: 95%; }
+
+            footer ul li.last a { width: 100%; }
+
+}
+    
+
